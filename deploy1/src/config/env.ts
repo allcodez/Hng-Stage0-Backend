@@ -1,5 +1,5 @@
 export const config = {
-    port: process.env.PORT || 3000,
+    port: parseInt(process.env.PORT || '3000', 10),
     catFactApiUrl: process.env.CAT_FACT_API_URL || 'https://catfact.ninja/fact',
     apiTimeout: parseInt(process.env.API_TIMEOUT || '5000'),
     user: {
